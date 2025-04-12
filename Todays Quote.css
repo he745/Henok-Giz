@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 90vh;
+  background-color: red;
+  position: relative;
+}
+.img-1 {
+  width: 100%;
+  height: 100%;
+}
+.div-1 {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.514));
+  filter: blur(25px);
+}
+h2 {
+  padding-left: 7%;
+  font-size: 5vw;
+  color: #00bfff;
+  position: absolute;
+  top: 70px;
+}
+p {
+  padding-left: 7%;
+  margin-top: 5%;
+  font-size: 3vw;
+  color: deepskyblue;
+  position: absolute;
+  top: 130px;
+}
+.menu-1 {
+  float: right;
+  font-size: 7vh;
+  color: rgb(51, 255, 0);
+  font-weight: 400;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  transition: transform 3s;
+  transform: rotate(90deg);
+}
+.mole {
+  position: fixed;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  background: gold;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 0px 20px 20px gold;
+  animation: mole 5s infinite alternate;
+}
+@keyframes mole {
+  100% {
+    box-shadow: 0px 0px 50px 45px gold, 0px 0px 70px 40px rgb(255, 0, 234),
+      0px 0px 90px 35px rgb(43, 255, 0), 0px 0px 110px 30px rgb(0, 247, 255),
+      0px 0px 130px 25px rgb(0, 68, 255);
+  }
+}
+
+.section-1 {
+  position: fixed;
+  top: 0;
+  right: 70px;
+  width: 35vh;
+  height: 70vh;
+  background: deepskyblue;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-style: none;
+  transition: transform 2s, width 3s, box-shadow 3s;
+  transform: translateY(-70vh);
+}
+
+.section-1 ul {
+  width: 100%;
+  height: 97%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0xp 20px 5px black, 0px 0xp 30px 10px black,
+    0px 0xp 35px 10px black, 0px 0xp 40px 10px black;
+  border-radius: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 30px;
+}
+
+.section-1 ul li {
+  font-size: 100%;
+  text-align: center;
+  list-style-type: none;
+  text-decoration-line: none;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.section-1 ul li a {
+  text-decoration-line: none;
+  color: deepskyblue;
+  font-weight: 500;
+  text-shadow: 0px 0px 30px 10px rgb(166, 255, 0);
+}
+
+.section-1 ul li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: -50px;
+  padding-bottom: 20px;
+}

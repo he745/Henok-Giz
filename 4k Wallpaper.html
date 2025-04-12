@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Henok Giz" content="4K Wallpaper" />
+    <meta
+      keyword="Wallpaper"
+      content="Wallpaper,4k,3k,2k,1k,images,pictures,frame,log"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="StyleSheet" href="Home.css" />
+    <title>Document</title>
+  </head>
+  <body id="body-1" onclick="play()" ondblclick="pause()">
+    <div class="boss-div-1 wal-12 sec-wal-12 third-wal-12">
+      <section class="section-1 wal-4 sec-wal-4">
+        <img class="img-1" src="./gif/gif (53).gif" />
+      </section>
+
+      <section class="section-2 wal-8 sec-wal-8">
+        <ul class="ul-1">
+          <li><a href="4k Wallpaper.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Main.html">Main</a></li>
+          <li>
+            <button
+              class="li-button"
+              id="darr"
+              onclick="changeBackground()"
+              ondblclick="changeBackgroundTwo()"
+            >
+              &Delta;
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="boss-div-2">
+      <section class="section-3 wal-8 sec-wal-8">
+        <section class="sub-section-1">
+          <h1 class="section-h1-1"><i> Henok Giz </i></h1>
+          <h3 class="section-h1-2">
+            <e>
+              Front-End & Desktop-App Developer with<br />
+              knowledge of HTML,CSS,Js,React,Git,Java...<br />
+              Here We go...
+            </e>
+          </h3>
+          <h3 class="section-h1-3">&darr;</h3>
+        </section>
+      </section>
+      <section class="section-4 wal-4 sec-wal-4">
+        <section class="sub-section-img-1" width="100%">
+          <img
+            class="img-2"
+            id="img-1"
+            src="./images/jpg/best.jpg"
+            width="100%"
+          />
+        </section>
+      </section>
+    </div>
+
+    <footer class="footer-first wal-12 sec-wal-12 third-wal-12">
+      <p class="section-5">
+        &#128508; &nbsp;&nbsp;<a href="mailto:henok777@gmail.com"> Google </a>
+        &nbsp;&nbsp;|
+        <a href="mailto:henok777@gmail.com"> Facebook </a> &nbsp;&nbsp;|
+        <a href="mailto:henok777@gmail.com"> Telegram </a>
+      </p>
+      <p class="section-6"><small>2025 &copy; All Rights Reserved. </small></p>
+      <h3><small>Developed By Henok Giz</small></h3>
+    </footer>
+    <audio id="vid">
+      <source src="./audio/2.motivation.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      const background = document.getElementById("body-1");
+      const image = document.getElementById("img-1");
+      function changeBackground() {
+        background.style.backgroundColor = "deepSkyBlue";
+      }
+      function changeBackgroundTwo() {
+        background.style.backgroundColor = "black";
+      }
+
+      //....................................................................
+      var video = document.getElementById("vid");
+      const play = () => {
+        video.play();
+        video.style.boxShadow = "2px 2px 30px black";
+        video.style.animation = "vi 5s infinite";
+      };
+      const pause = () => {
+        video.pause();
+      };
+    </script>
+  </body>
+</html>

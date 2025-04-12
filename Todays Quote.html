@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="website design, html,css,front end,back end,full stack,web development,html elements,Eastern,Resurrection,christimas,crusifixion,cross,criss,jesus"
+    />
+    <meta
+      name="description"
+      content="This is Front end Website that designed using HTML5.<wbr> In this web you can get all the HTML5 elements"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="StyleSheet" href="Todays Quote.css" />
+    <title>Eastern</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <img
+        id="img-1"
+        class="img-1"
+        src="./images/chu (5).jpg"
+        alt="Content Error"
+      />
+      <div class="div-1" id="div-1"></div>
+      <h1 id="menu-1" class="menu-1">|||</h1>
+    </header>
+    <h2>Welcome</h2>
+    <p>Learn More Get More</p>
+    <div id="mole" class="mole"></div>
+    <section class="section-1" id="section-1">
+      <ul>
+        <li><img src="./images/chu (12).jpg" alt="Content Error" /></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Todays Quote.html">Today's Quote</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">Contact Us</a></li>
+      </ul>
+    </section>
+
+    <script>
+      const mole = document.getElementById("menu-1");
+      const menu = document.getElementById("section-1");
+
+      mole.addEventListener("click", () => {
+        menu.style.cssText = "transform: translateY(0vh)";
+      });
+      mole.addEventListener("dblclick", () => {
+        menu.style.cssText = "transform: translateY(-70vh)";
+      });
+    </script>
+  </body>
+</html>
